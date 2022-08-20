@@ -27,7 +27,7 @@ const Home = () => {
                     <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
                 </div>
             </form>
-            <h1 className='text-center mb-10'>Total Result found: {meals.length}</h1>
+            <h1 className='text-center mb-10 mt-5'>Total Result found: {meals.length}</h1>
             <div className='grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
                 {
                     meals.map(foods => <Foods foods={foods} key={foods.idMeal}></Foods>)
